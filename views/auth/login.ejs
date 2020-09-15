@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <title>EDM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-5 mx-auto mt-5">
+            <div class="card d-flex ">
+                <article class="card-body ">
+                    <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                        <form method="POST">
+                            <% if(errors) { %>
+                                <div>
+                                    <h6 style="color: #f00c0c; font-size: 17px"><%= errors %></h6>
+                                </div>
+                            <% } %>
+                            <div class="form-group">
+                                <label>Your name</label>
+                                <input class="form-control" name="name" placeholder="name" type="text">
+                            </div> <!-- form-group// -->
+                            <div class="form-group">
+                                <label>Your password</label>
+                                <input class="form-control" name="pass" placeholder="******" type="password">
+                            </div> <!-- form-group// --> 
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                            </div> <!-- form-group// -->                                                           
+                        </form>
+                </article>
+            </div> <!-- card.// -->
+        </div>
+    </div>
+</body>
+</html>
